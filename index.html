@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Wawan & Sifa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" >
+    
+</head>
+<body>
+    <!-- Cover Section -->
+    <section id="cover" class="active">
+        <div class="cover-content">
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+            <div class="leaf leaf-4"></div>
+            
+            <div class="cover-text">
+                <h3>Undangan Pernikahan</h3>
+                <h1>Wawan & Sifa</h1>
+                <p class="date">Minggu, 15 Juni 2025</p>
+                <div class="to-guest">
+                    <p>Kepada Yth:</p>
+                    <p class="guest-name">Bapak/Ibu/Saudara/i 
+                        <div class="guest-name"><span></span></div>
+                    </p>
+                </div>
+                <button id="open-invitation" class="btn">Buka Undangan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h3>Kami Mengundang Anda</h3>
+                <h1>Wawan & Sifa </h1>
+                <p>Minggu, 15 Juni 2025</p>
+            </div>
+        </header>
+
+        <!-- Couple Section -->
+        <section id="couple">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Mempelai</h2>
+                </div>
+                <div class="couple-wrapper">
+                    <div class="couple-photo">
+                        <img src="/assets/CPP.JPG" alt="Wawan & Sifa">
+                    </div>
+                    <div class="couple-info">
+                        <div class="groom">
+                            <h3>Wawan Setiawan</h3>
+                            <p>Putra dari Bapak Didi Setiono & Ibu Cholisah </p>
+                            <p>Jl. Lingkar Utara BLok Arda Rt38/Rw04 Ds Randudongkal, Kec Randudongkal, Kab Pemalang</p>
+                        </div>
+                    </div>  
+                        <div class="and">&</div>
+
+                        <div class="couple-photo">
+                        <img src="/assets/CPW.JPG" alt="Wawan & Sifa">
+                        </div>
+                     
+                    <div class="div couple-info">
+
+
+                       
+                        <div class="bride">
+                            <h3>Sifaul Janah</h3>
+                            <p>Putri dari Bapak Nur Rohman & Ibu Sulistiawati ( Almh )</p>
+                            <p>Dk Patoman Rt04/Rw04 Ds Mandiraja, Kec Moga, kab Pemalang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Galeri Foto</h2>
+                    <p>Momen-momen indah perjalanan cinta kami</p>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="gallery-item" data-index="0">
+                        <img src="/assets/02.jpg" alt="Foto Prewedding 1">
+                    </div>
+                    <div class="gallery-item" data-index="1">
+                        <img src="/assets/03.jpg" alt="Foto Prewedding 2">
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <img src="/assets/04.jpg" alt="Foto Prewedding 3">
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="/assets/05.JPG" alt="Foto Prewedding 4">
+                    </div>
+                    <div class="gallery-item" data-index="4">
+                        <img src="/assets/06.jpg" alt="Foto Prewedding 5">
+                    </div>
+                    <div class="gallery-item" data-index="5">
+                        <img src="/assets/CPP.JPG" alt="Foto Prewedding 6">
+                    </div>
+                    <div class="gallery-item" data-index="6">
+                        <img src="/assets/CPW.JPG" alt="Foto Prewedding 7">
+                    </div>
+                    <div class="gallery-item" data-index="7">
+                        <img src="/assets/01.jpg" alt="Foto Prewedding 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Modal -->
+        <div id="galleryModal" class="gallery-modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <img id="modalImage" src="/placeholder.svg" alt="Foto Prewedding">
+            </div>
+            <div class="modal-nav">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Countdown Section -->
+        <section id="countdown">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Menghitung Hari</h2>
+                </div>
+                <div class="countdown-wrapper">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <p>Hari</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <p>Jam</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <p>Menit</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <p>Detik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Section -->
+        <section id="event">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Acara</h2>
+                </div>
+                <div class="event-wrapper">
+                    <div class="event-item akad">
+                        <div class="event-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3>Akad Nikah</h3>
+                        <div class="event-details">
+                            <div class="event-date">
+                                <i class="fas fa-calendar"></i>
+                                <p>Rabu, 18 Juni 2025</p>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <p>Pukul 12.00 WIB</p>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Dk Patoman Rt04/Rw04 Ds Mandiraja, Kec Moga, kab Pemalang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-item resepsi">
+                        <div class="event-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Resepsi</h3>
+                        <div class="event-details">
+                            <div class="event-date">
+                                <i class="fas fa-calendar"></i>
+                                <p>Minggu, 15 Juni 2025</p>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <p>Pukul 08.00 - Selesai </p>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Jl. Lingkar Utara Blok Arda Rt38/Rw04 Randudongkal, Kec Randudongkal, kab Pemalang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Lokasi</h2>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.8127919517868!2d109.32543956962542!3d-7.09685976872629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDUnNDguNyJTIDEwOcKwMTknMzMuOSJF!5e0!3m2!1sid!2sid!4v1749361980160!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-button">
+                        <a href="https://maps.app.goo.gl/kdgYmQZw83UeaDURA" target="_blank" class="btn">Buka Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Section -->
+        <section id="gift">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Amplop Digital</h2>
+                    <p>Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun, jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+                </div>
+                <div class="gift-wrapper">
+                    <div class="gift-item">
+                        <div class="bank-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/640px-Bank_Mandiri_logo_2016.svg.png" alt="MANDIRI">
+                        </div>
+                        <div class="bank-details">
+                            <p class="account-number">1390027894686</p>
+                            <p class="account-name">Sifaul Janah</p>
+                        </div>
+                        <button class="copy-btn" data-clipboard-text="1390027894686">Salin Rekening</button>
+                    </div>
+                    <div class="gift-item">
+                        <div class="bank-logo">
+                            <img src="data:image/jpeg;base64,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" alt="ISAKU">
+                        </div>
+                        <div class="bank-details">
+                            <p class="account-number">083124147586</p>
+                            <p class="account-name">Sifaul Janah</p>
+                        </div>
+                        <button class="copy-btn" data-clipboard-text="083124147586">Salin Rekening</button>
+                    </div>
+                    <div class="gift-item">
+                        <div class="bank-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/BCA_LOGO.jpg/640px-BCA_LOGO.jpg" alt="BCA">
+                        </div>
+                        <div class="bank-details">
+                            <p class="account-number">1341967592</p>
+                            <p class="account-name">Wawan Setiawan</p>
+                        </div>
+                        <button class="copy-btn" data-clipboard-text="1341967592">Salin Rekening</button>
+                    </div>
+                    <div class="gift-item">
+                        <div class="bank-logo">
+                            <img src="data:image/jpeg;base64,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" alt="ISAKU">
+                        </div>
+                        <div class="bank-details">
+                            <p class="account-number">082314904358</p>
+                            <p class="account-name">Wawan Setiawan</p>
+                        </div>
+                        <button class="copy-btn" data-clipboard-text="082314904358">Salin Rekening</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishes Section -->
+        <section id="wishes">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Ucapan & Doa</h2>
+                </div>
+                <div class="wishes-form">
+                    <form id="wishesForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Ucapan & Doa" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select id="attendance" name="attendance" required>
+                                <option value="" disabled selected>Konfirmasi Kehadiran</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak-hadir">Tidak Hadir</option>
+                                <option value="ragu">Masih Ragu</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Kirim Ucapan</button>
+                    </form>
+                </div>
+                <div class="wishes-list">
+                    <div class="wishes-item">
+                        <div class="wishes-header">
+                            <h4>Ahmad</h4>
+                            <span class="attendance hadir">Hadir</span>
+                        </div>
+                        <p>Selamat atas pernikahan kalian! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah.</p>
+                    </div>
+                    <div class="wishes-item">
+                        <div class="wishes-header">
+                            <h4>Budi</h4>
+                            <span class="attendance tidak-hadir">Tidak Hadir</span>
+                        </div>
+                        <p>Mohon maaf tidak bisa hadir. Semoga pernikahan kalian diberkahi dan langgeng sampai akhir hayat.</p>
+                    </div>
+                    <div id="wishes-container">
+                        <!-- Wishes will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Terima Kasih</h3>
+                    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+                    <div class="couple-name">
+                        <h2>Wawan & Sifa</h2>
+                        <p>Desain By Wawan Setiawan</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Audio Control -->
+        <div class="audio-control">
+            <button id="play-pause" class="play">
+                <i class="fas fa-play" id="play-icon"></i>
+                <i class="fas fa-pause" id="pause-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Open Invitation Button
+            const openInvitationBtn = document.getElementById('open-invitation');
+            const coverSection = document.getElementById('cover');
+            const mainContent = document.getElementById('main-content');
+            
+            openInvitationBtn.addEventListener('click', function() {
+                coverSection.classList.add('slide-up');
+                mainContent.classList.remove('hidden');
+                
+                // Start playing music
+                playAudio();
+                
+                // Start countdown
+                startCountdown();
+            });
+            
+            // Countdown Timer
+            function startCountdown() {
+                const weddingDate = new Date('Juni 18, 2025 12:00:00').getTime();
+                
+                const countdownInterval = setInterval(function() {
+                    const now = new Date().getTime();
+                    const distance = weddingDate - now;
+                    
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+                    document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+                    document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+                    document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+                    
+                    if (distance < 0) {
+                        clearInterval(countdownInterval);
+                        document.getElementById('days').innerHTML = '00';
+                        document.getElementById('hours').innerHTML = '00';
+                        document.getElementById('minutes').innerHTML = '00';
+                        document.getElementById('seconds').innerHTML = '00';
+                    }
+                }, 1000);
+            }
+            
+            // Audio Control
+            const playPauseBtn = document.getElementById('play-pause');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const audio = new Audio('audio.mp3');
+            audio.loop = true;
+            
+            function playAudio() {
+                audio.play().then(() => {
+                    playIcon.style.display = 'none';
+                    pauseIcon.style.display = 'inline-block';
+                    playPauseBtn.classList.remove('play');
+                    playPauseBtn.classList.add('pause');
+                }).catch(error => {
+                    console.error('Audio play failed:', error);
+                });
+            }
+            
+            function pauseAudio() {
+                audio.pause();
+                playIcon.style.display = 'inline-block';
+                pauseIcon.style.display = 'none';
+                playPauseBtn.classList.remove('pause');
+                playPauseBtn.classList.add('play');
+            }
+            
+            playPauseBtn.addEventListener('click', function() {
+                if (playPauseBtn.classList.contains('play')) {
+                    playAudio();
+                } else {
+                    pauseAudio();
+                }
+            });
+            
+            // Copy to Clipboard for Bank Account
+            const copyButtons = document.querySelectorAll('.copy-btn');
+            
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const textToCopy = this.getAttribute('data-clipboard-text');
+                    
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        const originalText = this.textContent;
+                        this.textContent = 'Tersalin!';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+            
+            // Wishes Form Submission
+            const wishesForm = document.getElementById('wishesForm');
+            const wishesContainer = document.getElementById('wishes-container');
+            
+            wishesForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const message = document.getElementById('message').value;
+                const attendance = document.getElementById('attendance').value;
+                
+                // Create new wishes item
+                const wishesItem = document.createElement('div');
+                wishesItem.className = 'wishes-item';
+                
+                let attendanceClass = '';
+                let attendanceText = '';
+                
+                switch(attendance) {
+                    case 'hadir':
+                        attendanceClass = 'hadir';
+                        attendanceText = 'Hadir';
+                        break;
+                    case 'tidak-hadir':
+                        attendanceClass = 'tidak-hadir';
+                        attendanceText = 'Tidak Hadir';
+                        break;
+                    case 'ragu':
+                        attendanceClass = 'ragu';
+                        attendanceText = 'Masih Ragu';
+                        break;
+                }
+                
+                wishesItem.innerHTML = `
+                    <div class="wishes-header">
+                        <h4>${name}</h4>
+                        <span class="attendance ${attendanceClass}">${attendanceText}</span>
+                    </div>
+                    <p>${message}</p>
+                `;
+                
+                // Add to wishes container
+                wishesContainer.prepend(wishesItem);
+                
+                // Reset form
+                wishesForm.reset();
+                
+                // Show success message
+                alert('Terima kasih atas ucapan dan doanya!');
+            });
+
+            // Gallery Modal
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const galleryModal = document.getElementById('galleryModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.querySelector('.close-modal');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentImageIndex = 0;
+            const galleryImages = [];
+
+            // Collect all gallery images
+            galleryItems.forEach(item => {
+                const imgSrc = item.querySelector('img').src;
+                const imgAlt = item.querySelector('img').alt;
+                galleryImages.push({ src: imgSrc, alt: imgAlt });
+            });
+
+            // Open modal when clicking on gallery item
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    currentImageIndex = parseInt(this.getAttribute('data-index'));
+                    showImage(currentImageIndex);
+                    galleryModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                });
+            });
+
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                galleryModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            });
+
+            // Close modal when clicking outside the image
+            galleryModal.addEventListener('click', function(e) {
+                if (e.target === galleryModal) {
+                    galleryModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Previous image
+            prevBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent modal from closing
+                currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                showImage(currentImageIndex);
+            });
+
+            // Next image
+            nextBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent modal from closing
+                currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                showImage(currentImageIndex);
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (galleryModal.style.display === 'flex') {
+                    if (e.key === 'ArrowLeft') {
+                        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                        showImage(currentImageIndex);
+                    } else if (e.key === 'ArrowRight') {
+                        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                        showImage(currentImageIndex);
+                    } else if (e.key === 'Escape') {
+                        galleryModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+            });
+
+            // Show image in modal
+            function showImage(index) {
+                modalImage.src = galleryImages[index].src;
+                modalImage.alt = galleryImages[index].alt;
+            }
+        });
+
+        const urlParams = new URLSearchParams(window.location.search)
+        const nama = urlParams.get('n')
+
+
+        const namaContainer = document.querySelector('.guest-name span')
+        namaContainer.innerText = nama
+
+    </script>
+</body>
+</html>
